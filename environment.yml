@@ -1,0 +1,11 @@
+name: langsmith_tutorial
+channels:
+  - defaults
+dependencies:
+  - python-dotenv
+  - langchain
+  - openai
+  - nest_asyncio
+  - pandas
+  - tiktoken
+  - rapidfuzz

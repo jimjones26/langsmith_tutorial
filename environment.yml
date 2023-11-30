@@ -3,9 +3,11 @@ channels:
   - defaults
 dependencies:
   - python-dotenv
-  - langchain
   - openai
-  - nest_asyncio
   - pandas
-  - tiktoken
   - rapidfuzz
+  - pip
+  - pip:
+    - langchain
+    - nest_asyncio
+    - tiktoken

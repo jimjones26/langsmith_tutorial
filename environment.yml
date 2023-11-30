@@ -2,6 +2,7 @@ name: langsmith_tutorial
 channels:
   - defaults
 dependencies:
+  - python=3.10
   - python-dotenv
   - openai
   - pandas

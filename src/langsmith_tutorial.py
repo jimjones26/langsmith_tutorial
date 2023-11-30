@@ -21,5 +21,14 @@ nest_asyncio.apply()
 load_dotenv(find_dotenv())
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_ENDPOINT"] = "http://api.smith.langchain.com"
-os.environ["LANGCHAN_PROJECT"] = "langsmith-tutorial"
+os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
+os.environ["LANGCHAN_PROJECT"] = "pt-diligent-curtailment-93"
+
+# ------------------------------------------------------------------
+# Load the Langsmith Client and test run
+# ------------------------------------------------------------------
+
+client = Client()
+
+llm = ChatOpenAI()
+llm.predict("Hello World!")
